@@ -16,9 +16,15 @@ pyenv install [version]
 
 ```cmd
 python -m pip install virtualenv
-python -m virtualenv venv
-.\venv\Scripts\activate
+python -m virtualenv .venv
+.\.venv\Scripts\activate
 pip install -r requirements.txt
+```
+
+## 사용중인 패키지 저장
+activate 상태에서
+```cmd
+pip freeze > requirements.txt
 ```
 
 ## 장고 버전 확인
