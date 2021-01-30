@@ -27,16 +27,7 @@ activate 상태에서
 pip freeze > requirements.txt
 ```
 
-## 장고 버전 확인
-```cmd
-python -m django --version
-```
-
-## 장고 실행하기
-```cmd
-python manage.py runserver
-```
 
 ## REF
-* django rest api quick start
- * https://www.django-rest-framework.org/tutorial/quickstart/
+* [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)
+* [Flask로 REST API 구현하기](https://justkode.kr/python/flask-restapi-1)
