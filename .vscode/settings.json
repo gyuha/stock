@@ -2,6 +2,7 @@
   "cSpell.words": [
     "Matplotlib",
     "RESTX",
+    "astype",
     "choco",
     "dotenv",
     "getenv",
@@ -9,7 +10,8 @@
     "pyenv",
     "runserver",
     "venv",
-    "virtualenv"
+    "virtualenv",
+    "zfill"
   ],
   "python.pythonPath": ".venv\\Scripts\\python.exe",
   "files.exclude": {

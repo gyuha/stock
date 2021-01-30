@@ -81,7 +81,9 @@ DB_PASS=[USER_PASSWORD]
   * [Flask로 REST API 구현하기 - 3. JWT로 사용자 인증하기](https://justkode.kr/python/flask-restapi-3)
 
 # Database
-
+* [SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
+  * [점프투파이썬 - 모델로 데이터 처리하기](https://wikidocs.net/81045) 
+  * https://opentutorials.org/module/3669/22070
 
 # 라이브러리
 * [arrow](https://arrow.readthedocs.io/en/stable/)
