@@ -76,6 +76,8 @@ DB_PASS=[USER_PASSWORD]
 
 # 사용 프레임워크
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+  * [An awesome REST boilerplate that uses Flask-RESTX](https://github.com/X1Zeth2X/flask-restx-boilerplate)
+  * [Flask MySQL Boilerplate](https://github.com/fromzeroedu/flask-mysql-boilerplate)
 * [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)
   * [Flask로 REST API 구현하기 - 2. 파일 분리, 문서화](https://justkode.kr/python/flask-restapi-2)
   * [Flask로 REST API 구현하기 - 3. JWT로 사용자 인증하기](https://justkode.kr/python/flask-restapi-3)

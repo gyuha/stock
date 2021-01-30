@@ -3,9 +3,7 @@ from flask_restx import Resource, Api, Namespace, fields
 
 import pandas as pd
 import numpy as np
-import requests
 
-from io import BytesIO
 
 crawler = {}
 
