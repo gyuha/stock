@@ -36,6 +36,13 @@ DB_USER=[USER_ID]
 DB_PASS=[USER_PASSWORD]
 ```
 
+# 라이브러리
+* [arrow](https://arrow.readthedocs.io/en/stable/)
+* [numpy](https://numpy.org/)
+* [pandas](https://pandas.pydata.org/)
+## Blog post
+  * [numpy](http://pythonstudy.xyz/python/article/402-numpy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+  * [판다스(Pandas) and 넘파이(Numpy) and 맷플롭립(Matplotlib)](https://wikidocs.net/32829)
 
 ## REF
 * [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)
