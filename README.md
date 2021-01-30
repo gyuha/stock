@@ -6,7 +6,7 @@
 
 초코로 아래와 같이 설치하는게 가장 간단.
 
-```cmd
+```
 choco install pyenv-win
 pyenv install --list
 pyenv install [version]
@@ -14,7 +14,7 @@ pyenv install [version]
 
 ## 파이썬 가상 환경 만들어 주기
 
-```cmd
+```
 python -m pip install virtualenv
 python -m virtualenv .venv
 .\.venv\Scripts\activate
@@ -23,8 +23,17 @@ pip install -r requirements.txt
 
 ## 사용중인 패키지 저장
 activate 상태에서
-```cmd
+```
 pip freeze > requirements.txt
+```
+
+## 데이터베이스 설정
+`.env` 파일을 만들고 아래와 같이 입력 해 준다.
+```
+DB_HOST=localhost
+DB_NAME=stock
+DB_USER=[USER_ID]
+DB_PASS=[USER_PASSWORD]
 ```
 
 
