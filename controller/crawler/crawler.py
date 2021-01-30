@@ -16,3 +16,5 @@ class Companies(Resource):
     return {
         'result': True
     }
+
+  def put(self):
