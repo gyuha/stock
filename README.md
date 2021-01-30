@@ -36,6 +36,12 @@ DB_USER=[USER_ID]
 DB_PASS=[USER_PASSWORD]
 ```
 
+# 사용 프레임워크
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+* [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)
+  * [Flask로 REST API 구현하기 - 2. 파일 분리, 문서화](https://justkode.kr/python/flask-restapi-2)
+  * [Flask로 REST API 구현하기 - 3. JWT로 사용자 인증하기](https://justkode.kr/python/flask-restapi-3)
+
 # 라이브러리
 * [arrow](https://arrow.readthedocs.io/en/stable/)
 * [numpy](https://numpy.org/)
