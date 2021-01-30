@@ -1,4 +1,4 @@
-from crawler.crawler import Crawler
+from controller.crawler.crawler import Crawler
 import os
 from flask import Flask
 from flask_restx import Resource, Api
