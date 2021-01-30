@@ -18,21 +18,15 @@ Crawler = Namespace(
 @Crawler.route('/krx/companies')
 class Companies(Resource):
 
-  def get_krx_companies():
-    url = 'http://kind.krx.co.kr/corpgeneral/corpList.do'
-    data = {
-        'method': 'download',
-        'orderMode': '1',           # 정렬컬럼
-        'orderStat': 'D',           # 정렬 내림차순
-        'searchType': '13',         # 검색유형: 상장법인
-        'fiscalYearEnd': 'all',     # 결산월: 전체
-        'location': 'all',          # 지역: 전체
-    }
-
-    res = requests.post(url, data=data)
-    content = BytesIO(res.content)
-    dfs = pd.read_html(content, header=0, parse_dates=['상장일'])
-    df = dfs[0].copy()
+  def _get_krx_companies(self):
+    '''
+    상장 기업 목록 받아 오기
+    참고 :
+     * https://blog.naver.com/cflab/222141302166
+     * https://comdoc.tistory.com/entry/%EC%83%81%EC%9E%A5-%EB%B2%95%EC%9D%B8-%EB%AA%A9%EB%A1%9D-KIND
+    '''
+    data = pd.read_html(
+        'http://kind.krx.co.kr/corpgeneral/corpList.do?method=download&pageIndex=1&currentPageSize=5000&orderMode=3&orderStat=D&marketType=stockMkt&searchType=13&fiscalYearEnd=all&&location=all')[0]
 
     # 숫자를 앞자리가 0인 6자리 문자열로 변환
     # - 방법.1
@@ -41,8 +35,9 @@ class Companies(Resource):
     # - 방법.2
     # df['종목코드'] = df['종목코드'].map('{:06d}'.format)
     # - 방법.3
-    df['종목코드'] = df['종목코드'].map(lambda x: f'{x:0>6}')
-    return df
+    data['종목코드'] = data['종목코드'].map(lambda x: f'{x:0>6}')
+
+    return data.rename(columns={'회사명': 'company', '종목코드': 'code', '업종': 'industry', '주요제품': 'product', '상장일': 'listing_date', '결산월': 'settlement_month', '대표자명': 'ceo_name', '홈페이지': 'homepage', '지역': 'area'})
 
   @Crawler.response(201, 'Success')
   def get(self):
@@ -51,3 +46,6 @@ class Companies(Resource):
     }
 
   def put(self):
+    return {
+
+    }
