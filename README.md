@@ -69,28 +69,37 @@ DB_PASS=[USER_PASSWORD]
      (ex. FooBar에 정의된 \_\_boo는 _FooBar\_\_boo로 바뀝니다.)
   * \_\_double_leading_and_trailing_underscore__: 마술(magic)을 부리는 용도로 사용되거나 사용자가 조정할 수 있는 네임스페이스 안의 속성을 뜻합니다. 이런 이름을 새로 만들지 마시고 오직 문서대로만 사용하세요.
 
-### 참고
+##  참고
 * [PEP 8 파이썬 코딩 스타일](http://pythonstudy.xyz/python/article/511-%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EC%BD%94%EB%94%A9-%EC%8A%A4%ED%83%80%EC%9D%BC)
 * [Python PEP 8](https://b.luavis.kr/python/python-convention)
 * [파이썬 코딩 컨벤션](https://spoqa.github.io/2012/08/03/about-python-coding-convention.html)
+
 
 # 사용 프레임워크
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
   * [An awesome REST boilerplate that uses Flask-RESTX](https://github.com/X1Zeth2X/flask-restx-boilerplate)
   * [Flask MySQL Boilerplate](https://github.com/fromzeroedu/flask-mysql-boilerplate)
+  * [Building REST APIs with Flask (Apress, 2019).](https://github.com/Apress/building-rest-apis-with-flask)
+  * [Flask + uWSGI + Nginx를 연결 및 배포](https://soyoung-new-challenge.tistory.com/118)
 * [Flask-RESTX](https://flask-restx.readthedocs.io/en/latest/index.html)
   * [Flask로 REST API 구현하기 - 2. 파일 분리, 문서화](https://justkode.kr/python/flask-restapi-2)
   * [Flask로 REST API 구현하기 - 3. JWT로 사용자 인증하기](https://justkode.kr/python/flask-restapi-3)
 
-# Database
+# 참고
+## 사이트
+* [점프 투 파이썬](https://wikidocs.net/book/1)
+* [Python 3's f-Strings: An Improved String Formatting Syntax (Guide)](https://realpython.com/python-f-strings/)
+
+## Database
 * [SQLAlchemy](https://flask-sqlalchemy.palletsprojects.com/en/2.x/)
   * [점프투파이썬 - 모델로 데이터 처리하기](https://wikidocs.net/81045) 
   * https://opentutorials.org/module/3669/22070
 
-# 라이브러리
+## 라이브러리
 * [arrow](https://arrow.readthedocs.io/en/stable/)
 * [numpy](https://numpy.org/)
 * [pandas](https://pandas.pydata.org/)
+
 ## Blog post
   * [numpy](http://pythonstudy.xyz/python/article/402-numpy-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
   * [판다스(Pandas) and 넘파이(Numpy) and 맷플롭립(Matplotlib)](https://wikidocs.net/32829)
